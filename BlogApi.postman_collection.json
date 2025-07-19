@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "56594565-2789-4f5f-9e20-1d65dabf16ed",
+		"name": "BlogApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46132907",
+		"_collection_link": "https://manuel-4188684.postman.co/workspace/Manuel's-Workspace~582ebb13-44d8-498b-8506-23de67e28bb1/collection/46132907-56594565-2789-4f5f-9e20-1d65dabf16ed?action=share&source=collection_link&creator=46132907"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/blogs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/blogs",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test\",\n    \"content\": \"This is a test blog post.\",\n    \"author\": \"TestAuthor\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/blogs/687b88098ba768d3f0c56704",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"Updated content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogs/687b81ce8d982bdb2633bb8c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs",
+						"687b81ce8d982bdb2633bb8c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/blogs/687b81d68d982bdb2633bb8e",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogs/687b81d68d982bdb2633bb8e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs",
+						"687b81d68d982bdb2633bb8e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
